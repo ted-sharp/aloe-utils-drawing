@@ -39,33 +39,10 @@ using System.Drawing;
 using Aloe.Utils.Win32.Drawing;
 
 // 画像ファイルの読み込み(メモリに読み込むのでファイルロックなし)
-var image = ImageLoader.Load("path/to/image.png");
+using var image = ImageLoader.Load("path/to/image.png");
 
 // 画像からアイコンへの変換
-var icon = image.ToIcon();
-
-// アイコンの使用例
-using var drawing = new Win32Drawing();
-
-// ウィンドウの作成
-var hwnd = drawing.CreateWindow(
-    className: "MyWindowClass",
-    windowName: "アイコン表示テスト",
-    width: 400,
-    height: 300);
-
-// 描画コンテキストの取得
-using var dc = drawing.GetDC(hwnd);
-
-// アイコンの描画
-drawing.DrawIcon(dc, 100, 100, icon.Handle);
-
-// 描画の更新
-drawing.UpdateWindow(hwnd);
-
-// リソースの解放
-icon.Dispose();
-image.Dispose();
+using var icon = image.ToIcon();
 ```
 
 ## ライセンス
