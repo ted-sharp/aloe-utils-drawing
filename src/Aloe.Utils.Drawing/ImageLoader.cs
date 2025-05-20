@@ -5,7 +5,7 @@
 using System.Drawing;
 using System.Runtime.Versioning;
 
-namespace Aloe.Utils.Win32.Drawing;
+namespace Aloe.Utils.Drawing;
 
 /// <summary>
 /// GDI+を利用して画像ファイルを読み込むためのクラス

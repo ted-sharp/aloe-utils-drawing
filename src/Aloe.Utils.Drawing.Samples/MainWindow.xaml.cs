@@ -10,7 +10,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Aloe.Utils.Win32.Drawing.Samples;
+namespace Aloe.Utils.Drawing.Samples;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml

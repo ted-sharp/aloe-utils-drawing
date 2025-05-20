@@ -5,7 +5,7 @@
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 
-namespace Aloe.Utils.Win32.Drawing;
+namespace Aloe.Utils.Drawing;
 
 /// <summary>
 /// Win32 APIラッパー：アイコンハンドル等の操作メソッドを提供します。

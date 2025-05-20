@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Aloe.Utils.Win32.Drawing.Samples;
+namespace Aloe.Utils.Drawing.Samples;
 /// <summary>
 /// Interaction logic for App.xaml
 /// </summary>

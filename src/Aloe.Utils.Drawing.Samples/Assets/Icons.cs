@@ -1,4 +1,4 @@
-﻿using Aloe.Utils.Win32.Drawing;
+﻿using Aloe.Utils.Drawing;
 using System.Drawing;
 using System.IO;
 using System.Windows.Media;

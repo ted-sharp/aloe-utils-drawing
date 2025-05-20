@@ -17,13 +17,13 @@ jobs:
           dotnet-version: '9.0.x'
           
       - name: Restore dependencies
-        run: dotnet restore src/Aloe.Utils.Win32.Drawing.sln
+        run: dotnet restore src/Aloe.Utils.Drawing.sln
         
       - name: Build
-        run: dotnet build src/Aloe.Utils.Win32.Drawing/Aloe.Utils.Win32.Drawing.csproj --configuration Release
+        run: dotnet build src/Aloe.Utils.Drawing/Aloe.Utils.Drawing.csproj --configuration Release
       
       - name: Pack (symbols+source)
-        run: dotnet pack src/Aloe.Utils.Win32.Drawing/Aloe.Utils.Win32.Drawing.csproj --configuration Release --no-build --include-symbols --include-source --output ./nupkgs
+        run: dotnet pack src/Aloe.Utils.Drawing/Aloe.Utils.Drawing.csproj --configuration Release --no-build --include-symbols --include-source --output ./nupkgs
       
       - name: Publish to NuGet
         run: dotnet nuget push ./nupkgs/*.nupkg ./nupkgs/*.snupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate

@@ -1,7 +1,7 @@
-﻿<Application x:Class="Aloe.Utils.Win32.Drawing.Samples.App"
+﻿<Application x:Class="Aloe.Utils.Drawing.Samples.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Aloe.Utils.Win32.Drawing.Samples"
+             xmlns:local="clr-namespace:Aloe.Utils.Drawing.Samples"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

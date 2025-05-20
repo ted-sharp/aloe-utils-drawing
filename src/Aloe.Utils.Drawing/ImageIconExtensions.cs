@@ -5,7 +5,7 @@
 using System.Drawing;
 using System.Runtime.Versioning;
 
-namespace Aloe.Utils.Win32.Drawing;
+namespace Aloe.Utils.Drawing;
 
 /// <summary>
 /// Image から Icon への変換拡張メソッドを提供します。

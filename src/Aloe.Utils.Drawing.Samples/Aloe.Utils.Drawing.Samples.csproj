@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Aloe.Utils.Win32.Drawing\Aloe.Utils.Win32.Drawing.csproj" />
+    <ProjectReference Include="..\Aloe.Utils.Drawing\Aloe.Utils.Drawing.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 using System.IO;
-using Aloe.Utils.Win32.Drawing;
+using Aloe.Utils.Drawing;
 
 namespace Aloe.Medock.Reservation.AloeMedockResvServerMonitor.Assets;
 

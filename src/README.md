@@ -1,6 +1,6 @@
-# Aloe.Utils.Win32.Drawing
+# Aloe.Utils.Drawing
 
-`Aloe.Utils.Win32.Drawing` is a library that provides direct access to Windows drawing-related Win32 APIs from .NET applications.
+`Aloe.Utils.Drawing` is a library that provides direct access to Windows drawing-related Win32 APIs from .NET applications.
 It can be used when you need to perform graphics processing and drawing operations programmatically.
 
 ## Key Features
@@ -17,7 +17,7 @@ It can be used when you need to perform graphics processing and drawing operatio
 
 ```csharp
 using System.Drawing;
-using Aloe.Utils.Win32.Drawing;
+using Aloe.Utils.Drawing;
 
 // Load image file (loads into memory, so no file lock)
 using var image = ImageLoader.Load("path/to/image.png");

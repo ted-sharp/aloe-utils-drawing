@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 cd /d %~dp0
 
-echo Publishing Aloe.Utils.Win32.Drawing...
+echo Publishing Aloe.Utils.Drawing...
 
 rem Clean previous publish directory
 if exist "publish" (
@@ -13,15 +13,15 @@ if exist "publish" (
 
 rem Build the project
 echo Building the project...
-dotnet build .\Aloe.Utils.Win32.Drawing\Aloe.Utils.Win32.Drawing.csproj -c Release
+dotnet build .\Aloe.Utils.Drawing\Aloe.Utils.Drawing.csproj -c Release
 
 rem Publish the application
 echo Building and publishing...
-dotnet publish .\Aloe.Utils.Win32.Drawing\Aloe.Utils.Win32.Drawing.csproj -c Release -r win-x64 -o .\publish\AloeUtilsWin32Drawing
+dotnet publish .\Aloe.Utils.Drawing\Aloe.Utils.Drawing.csproj -c Release -r win-x64 -o .\publish\AloeUtilsWin32Drawing
 
 rem Create NuGet package
 echo Creating NuGet package...
-dotnet pack .\Aloe.Utils.Win32.Drawing\Aloe.Utils.Win32.Drawing.csproj -c Release -o .\publish
+dotnet pack .\Aloe.Utils.Drawing\Aloe.Utils.Drawing.csproj -c Release -o .\publish
 
 if %ERRORLEVEL% EQU 0 (
     echo.

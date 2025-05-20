@@ -1,11 +1,11 @@
-# Aloe.Utils.Win32.Drawing
+# Aloe.Utils.Drawing
 
-[![NuGet Version](https://img.shields.io/nuget/v/Aloe.Utils.Win32.Drawing.svg)](https://www.nuget.org/packages/Aloe.Utils.Win32.Drawing)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/Aloe.Utils.Win32.Drawing.svg)](https://www.nuget.org/packages/Aloe.Utils.Win32.Drawing)
-[![License](https://img.shields.io/github/license/ted-sharp/aloe-utils-win32-drawing.svg)](LICENSE)
+[![NuGet Version](https://img.shields.io/nuget/v/Aloe.Utils.Drawing.svg)](https://www.nuget.org/packages/Aloe.Utils.Drawing)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Aloe.Utils.Drawing.svg)](https://www.nuget.org/packages/Aloe.Utils.Drawing)
+[![License](https://img.shields.io/github/license/ted-sharp/aloe-utils-drawing.svg)](LICENSE)
 [![.NET](https://img.shields.io/badge/.NET-9.0-blue.svg)](https://dotnet.microsoft.com/download/dotnet/9.0)
 
-`Aloe.Utils.Win32.Drawing` は、Windowsの描画関連のWin32 APIを.NETアプリケーションから直接呼び出すためのライブラリです。
+`Aloe.Utils.Drawing` は、Windowsの描画関連のWin32 APIを.NETアプリケーションから直接呼び出すためのライブラリです。
 グラフィックス処理や描画操作をプログラムから行う必要がある場合に使用できます。
 
 ## 主な機能
@@ -23,20 +23,20 @@
 NuGet パッケージマネージャーからインストール：
 
 ```cmd
-Install-Package Aloe.Utils.Win32.Drawing
+Install-Package Aloe.Utils.Drawing
 ```
 
 または、.NET CLI で：
 
 ```cmd
-dotnet add package Aloe.Utils.Win32.Drawing
+dotnet add package Aloe.Utils.Drawing
 ```
 
 ## 使用例
 
 ```csharp
 using System.Drawing;
-using Aloe.Utils.Win32.Drawing;
+using Aloe.Utils.Drawing;
 
 // 画像ファイルの読み込み(メモリに読み込むのでファイルロックなし)
 using var image = ImageLoader.Load("path/to/image.png");

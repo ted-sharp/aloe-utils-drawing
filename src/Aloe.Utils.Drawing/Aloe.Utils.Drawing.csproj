@@ -13,11 +13,11 @@
 		<Authors>ted-sharp</Authors>
 		<Company>Aloe Utils</Company>
 		<Description>A utility library for Windows drawing operations. Provides a simple and type-safe way to work with Windows GDI+ drawing functions.</Description>
-		<PackageId>Aloe.Utils.Win32.Drawing</PackageId>
+		<PackageId>Aloe.Utils.Drawing</PackageId>
 		<PackageTags>win32;drawing;gdi;windows;graphics;system-drawing</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/ted-sharp/aloe-utils-win32-drawing</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/ted-sharp/aloe-utils-win32-drawing.git</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/ted-sharp/aloe-utils-drawing</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ted-sharp/aloe-utils-drawing.git</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>Aloe.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
