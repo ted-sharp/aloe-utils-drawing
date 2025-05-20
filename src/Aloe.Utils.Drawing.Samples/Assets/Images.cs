@@ -1,8 +1,4 @@
-﻿using System.Drawing;
-using System.IO;
-using Aloe.Utils.Drawing;
-
-namespace Aloe.Medock.Reservation.AloeMedockResvServerMonitor.Assets;
+﻿namespace Aloe.Utils.Drawing.Samples.Assets;
 
 public static class Images
 {
