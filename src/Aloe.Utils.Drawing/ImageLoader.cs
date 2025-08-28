@@ -19,10 +19,27 @@ public static class ImageLoader
     /// </summary>
     /// <param name="filePath">画像ファイルのパス</param>
     /// <returns>生成された Image</returns>
+    /// <exception cref="ArgumentException">ファイルパスがnullまたは空文字列の場合。</exception>
+    /// <exception cref="FileNotFoundException">指定されたファイルが存在しない場合。</exception>
+    /// <exception cref="InvalidOperationException">画像の読み込みに失敗した場合。</exception>
     public static Image Load(string filePath)
     {
-        var imageData = File.ReadAllBytes(filePath);
-        using var ms = new MemoryStream(imageData);
-        return Image.FromStream(ms);
+        ArgumentException.ThrowIfNullOrWhiteSpace(filePath);
+        
+        if (!File.Exists(filePath))
+        {
+            throw new FileNotFoundException($"Image file not found: {filePath}");
+        }
+        
+        try
+        {
+            var imageData = File.ReadAllBytes(filePath);
+            using var ms = new MemoryStream(imageData);
+            return Image.FromStream(ms);
+        }
+        catch (Exception ex) when (ex is not FileNotFoundException && ex is not ArgumentNullException)
+        {
+            throw new InvalidOperationException($"Failed to load image from {filePath}", ex);
+        }
     }
 }

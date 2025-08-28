@@ -18,13 +18,24 @@ public static class ImageIconExtensions
     /// </summary>
     /// <param name="image">変換元の Image オブジェクト</param>
     /// <returns>変換後の Icon オブジェクト</returns>
+    /// <exception cref="ArgumentNullException">imageがnullの場合。</exception>
+    /// <exception cref="InvalidOperationException">アイコン変換に失敗した場合。</exception>
     public static Icon ToIcon(this Image image)
     {
-        var bmp = image as Bitmap ?? new Bitmap(image);
-        var hIcon = bmp.GetHicon();
-        var tempIcon = Icon.FromHandle(hIcon);
-        var newIcon = (Icon)tempIcon.Clone();
-        _ = NativeMethods.DestroyIcon(hIcon);
-        return newIcon;
+        ArgumentNullException.ThrowIfNull(image);
+        
+        try
+        {
+            var bmp = image as Bitmap ?? new Bitmap(image);
+            var hIcon = bmp.GetHicon();
+            var tempIcon = Icon.FromHandle(hIcon);
+            var newIcon = (Icon)tempIcon.Clone();
+            _ = NativeMethods.DestroyIcon(hIcon);
+            return newIcon;
+        }
+        catch (Exception ex) when (ex is not ArgumentNullException)
+        {
+            throw new InvalidOperationException("Failed to convert image to icon", ex);
+        }
     }
 }
