@@ -39,7 +39,13 @@ public static class ImageLoader
         }
         catch (Exception ex) when (ex is not FileNotFoundException && ex is not ArgumentNullException)
         {
-            throw new InvalidOperationException($"Failed to load image from {filePath}", ex);
+            var errorMessage = ex switch
+            {
+                OutOfMemoryException => $"Image file is corrupted or unsupported format: {filePath}",
+                ArgumentException => $"Invalid image data or unsupported format: {filePath}",
+                _ => $"Failed to load image from {filePath}"
+            };
+            throw new InvalidOperationException(errorMessage, ex);
         }
     }
 }
