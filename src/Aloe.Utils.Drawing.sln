@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aloe.Utils.Drawing", "Aloe.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aloe.Utils.Drawing.Samples", "Aloe.Utils.Drawing.Samples\Aloe.Utils.Drawing.Samples.csproj", "{71A362B6-A559-4BB3-BD01-228C31B8E24E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aloe.Utils.Drawing.Tests", "Aloe.Utils.Drawing.Tests\Aloe.Utils.Drawing.Tests.csproj", "{F3C6F91E-2951-C54F-63D3-509620EC739E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{71A362B6-A559-4BB3-BD01-228C31B8E24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A362B6-A559-4BB3-BD01-228C31B8E24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A362B6-A559-4BB3-BD01-228C31B8E24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C6F91E-2951-C54F-63D3-509620EC739E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C6F91E-2951-C54F-63D3-509620EC739E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C6F91E-2951-C54F-63D3-509620EC739E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C6F91E-2951-C54F-63D3-509620EC739E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
